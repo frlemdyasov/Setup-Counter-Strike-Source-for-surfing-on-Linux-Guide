@@ -9,12 +9,14 @@
 
 [How to Setup Keybinds for KSF Servers](#how-to-setup-keybinds-for-ksf-servers)
 
+[Where Can I Download Every KSF Surf Map?](#where-can-i-download-every-ksf-surf-map?)
+
 
 
 ## Why?
-This guide is intended for my own future reference. Here I've compiled the methods that worked for me.
+This guide is intended for my own future reference. Here I've compiled my own setup procedures.
 
-Every step is described from a Linux perspective, even if some fixes are universal.
+Every step is described from a Linux perspective, even if some methods are universal.
 
 ## The Setup
 I use Fedora Workstation 42, and I run CS:S natively.
@@ -71,3 +73,6 @@ Copy this line into the console to recieve my set of keybinds:
 - mousewheel down: Jump (Doesn't override space to jump)
 - left click: Turn left
 - right click: Turn Right
+
+## Where Can I Download Every KSF Surf Map?
+You can find them here: https://github.com/OuiSURF/Surf_Maps
