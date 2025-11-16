@@ -9,7 +9,7 @@
 
 [How to Setup Keybinds for KSF Servers](#how-to-setup-keybinds-for-ksf-servers)
 
-[Where Can I Download Every KSF Surf Map?](#where-can-i-download-every-ksf-surf-map?)
+[Where Can I Download Every KSF Surf Map?](#where-can-i-download-every-ksf-surf-map)
 
 
 
@@ -46,7 +46,9 @@ But here is a shortened procedure for Fedora users:
 4. Set permissions: `chmod +x lbspcfw.sh`
 5. Run the script: `./lbspcfw.sh`
 
-Now a TUI interface will display
+Now a TUI interface will display. Follow the prompts to convert the .bsp files.
+
+NOTE: If the process appears to hang on a map, it is most likely a visual problem. Just wait until the process is finished.
 
 ## How to Setup Keybinds for KSF Servers
 
@@ -57,7 +59,7 @@ Now a TUI interface will display
    - A list of commands can be found here: https://www.ksfclan.com/commands/
 
 ### Personal Keybinds
-Copy this line into the console to recieve my set of keybinds:
+Copy this line into the console to receive my set of keybinds:
 
 `bind v sm_restart; bind q sm_tele; bind e sm_saveloc; bind x sm_teleprev; bind c sm_telenext; bind z sm_surftimer; bind r sm_pr; bind shift +duck; bind mwheeldown +jump; bind mouse1 +left; bind mouse2 +right`
 
@@ -76,3 +78,9 @@ Copy this line into the console to recieve my set of keybinds:
 
 ## Where Can I Download Every KSF Surf Map?
 You can find them here: https://github.com/OuiSURF/Surf_Maps
+
+Each map is individually archived with a .rar archive. Instead of extracting every map by hand, you can use the `unrar` command to make it easier:
+1. Install unrar: `sudo dnf install unrar`
+2. Run: `find . -name "*.rar" -exec unrar x -o+ {} \;` (This may take a while)
+3. Optionally run: `rm *.rar`
+4. Move the .bsp files into the `maps` directory, usually located in: `~/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/maps`
