@@ -19,7 +19,7 @@ This guide is intended for my own future reference. Here I've compiled my own se
 Every step is described from a Linux perspective, even if some methods are universal.
 
 ## The Setup
-I use Fedora Workstation 42, and I run CS:S natively.
+I use Fedora Workstation 43, and I run CS:S natively.
 
 ## How to Remove the HUD
 Hud removal cannot be done using console commands on public servers, because they require `sv_cheats 1` to be enabled. Instead you need to download a custom HUD.
@@ -33,12 +33,11 @@ Hud removal cannot be done using console commands on public servers, because the
 Now every HUD element is hidden, except for the crosshair.
 
 ## How to Fix the Missing Textures
+Fix the missing texture, the black and purple squares, that appear on linux in some maps. 
 
-Some maps contain missing textures on Linux because they reference assets that are case-insensitive.
+Some maps contain missing textures on Linux because they reference assets that are case-insensitive. The fix is outlined here: https://github.com/scorpius2k1/linux-bsp-casefolding-workaround
 
-The fix is outlined here: https://github.com/scorpius2k1/linux-bsp-casefolding-workaround
-
-But here is a shortened procedure for Fedora users:
+Here is a shortened procedure for Fedora users:
 
 1. Install dependencies: `sudo dnf makecache && sudo dnf install curl inotify-tools libnotify parallel rsync unzip -y`
 2. Clone the repository: `git clone https://github.com/scorpius2k1/linux-bsp-casefolding-workaround.git`
@@ -59,10 +58,11 @@ NOTE: If the process appears to hang on a map, it is most likely a visual proble
    - A list of commands can be found here: https://www.ksfclan.com/commands/
 
 ### Personal Keybinds
+My personal set ofkeybinds to act as a starting point to begin creating your own set of binds
+
 Copy this line into the console to receive my set of keybinds:
 
 `bind v sm_restart; bind q sm_tele; bind e sm_saveloc; bind x sm_teleprev; bind c sm_telenext; bind z sm_surftimer; bind r sm_pr; bind shift +duck; bind mwheeldown +jump; bind mouse1 +left; bind mouse2 +right`
-
 
 - v: Restart the map
 - q: Teleport to the current location
@@ -77,10 +77,11 @@ Copy this line into the console to receive my set of keybinds:
 - right click: Turn Right
 
 ## Where Can I Download Every KSF Surf Map?
-You can find them here: https://github.com/OuiSURF/Surf_Maps
+You can download every ksf surf map here: https://github.com/OuiSURF/Surf_Maps
 
 Each map is individually archived with a .rar archive. Instead of extracting every map by hand, you can use the `unrar` command to make it easier:
 1. Install unrar: `sudo dnf install unrar`
-2. Run: `find . -name "*.rar" -exec unrar x -o+ {} \;` (This may take a while)
-3. Optionally run: `rm *.rar`
-4. Move the .bsp files into the `maps` directory, usually located in: `~/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/maps`
+2. Unzip the Google Dive archives: `unzip '*.zip' -d .`
+3. Unrar the : `find . -name "*.rar" -exec unrar x -o+ {} \;` (This may take a while)
+4. Run: `rm *.rar`
+5. Move the .bsp files into the `maps` directory, usually located in: `~/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/maps`
