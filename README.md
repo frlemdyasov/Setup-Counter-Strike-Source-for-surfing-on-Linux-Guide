@@ -45,7 +45,7 @@ A list of commands can be found here: https://www.ksfclan.com/commands/
 ### Enable the Developer Console
 How to enable the developer console in Counter Strike: Source
 
-The developer console is disabled by default. Enable the developer console:
+The developer console is used to create keybinds, but it's disabled by default. Enable the developer console:
 
 1. Launch Counter Strike: Source
 2. Select the `Options` text
