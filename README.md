@@ -17,7 +17,7 @@ I use Fedora Workstation 43 and run CS:S natively.
 ## Remove the HUD
 How to remove HUD elements such as the radar, round timer, and health counter.
 
-HUD removal cannot be done using console commands on public servers, because they require `sv_cheats 1` to be enabled. Instead you need to download a custom HUD.
+You can't remove the HUD using console commands on public servers, because they require `sv_cheats 1` to be enabled. Instead you need to download a custom HUD.
 
 1. Download No Hud v2 by One from: https://gamebanana.com/mods/15647
 2. Extract the .zip file
@@ -36,31 +36,46 @@ HUD removal cannot be done using console commands on public servers, because the
 
 
 ## Create Keybinds for KSF Servers
-
-On KSF Servers, you can teleport to the start of the map by typing `!r` in the chat. Instead of pressing, `y` → `!` → `r` → `Enter`, we can simply bind `v` to the action. 
+How to create keybinds that map to KSF surf server specific actions.
 
 Keybinds are created in the developer console using the `bind` function. `bind` can be used by following this template: `bind <key> <command>`
 
 A list of commands can be found here: https://www.ksfclan.com/commands/
 
 ### Enable the Developer Console
+How to enable the developer console in Counter Strike: Source
 
-The developer console is disabled by default. Enable the developer console in the game menu:
+The developer console is disabled by default. Enable the developer console:
 
 1. Launch Counter Strike: Source
-2. In the main menu, select the `Options` text
-3. In the Options menu, select the `Keyboard` tab
-4. In the Keyboard tab, press the `Advanced...` button
-5. In the Advanced menu, check the box next to `Enable Developer Console (~)`
+2. Select the `Options` text
+3. Select the `Keyboard` tab
+4. Press the `Advanced...` button
+5. Check the box next to `Enable Developer Console (~)`
+
+![Screenshot of the Advanced menu with a checked Enable Developer Console (~) checkbox](screenshots/DevConsoleSetting.png)
 
 **Result:** The developer console is enabled
 
 > [!NOTE]
 > The developer console can be launched by pressing the tilde key: the key that produces \` or `~` when modified by the Shift key.
 
+### Create a Restart Map Keybind
+How to create a keybind that teleports you to the start of the map
+
+You can teleport to the start of the map by typing `!r` in the chat. Instead of pressing, `y` → `!` → `r` → `Enter`, we can simply bind `v` to the action:
+
+1. Open the the developer console using the tilde key (~)
+2. Type `bind v sm_restart`
+3. Press `Enter`
+
+**Result:** Pressing `v` teleports you to the start of the map
+
+> [!NOTE]
+> This keybind will only work for KSF servers, or other servers running a similar plugin.
 
 ### Personal Keybinds
-My personal set ofkeybinds to act as a starting point to begin creating your own set of binds
+My personal set of keybinds to act as a starting point to begin creating your own set.
 
 Copy this line into the console to receive my set of keybinds:
 
@@ -107,4 +122,4 @@ Here is a shortened procedure for Fedora users:
 **Result:** Now a TUI interface will display. Follow the prompts to convert the .bsp files.
 
 > [!NOTE] 
-> If the process appears to hang on a map, it is most likely a visual problem. Just wait until the process is finished.
+> If the process appears to hang on a map, it is most likely a visual problem. The script is still converting maps, so just wait until the process is finished.
