@@ -19,11 +19,12 @@ How to remove HUD elements such as the radar, round timer, and health counter.
 
 You can't remove the HUD using console commands on public servers, because they require `sv_cheats 1` to be enabled. Instead you need to download a custom HUD.
 
-1. Download No Hud v2 by One from: https://gamebanana.com/mods/15647
-2. Extract the .zip file
-3. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
+1. Download [No Hud v2 by One](nohudv2.zip), licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+    - Original link: https://gamebanana.com/mods/15647
+3. Extract the .zip file
+4. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
 ![Screenshot of file navigation to the nohudv2/No\ Hud\ clean/cstrike/custom/ folder](screenshots/CopyHud.png)
-4. Copy the `my_custom_suff` folder into the CS:S `custom` folder
+5. Copy the `my_custom_suff` folder into the CS:S `custom` folder
    - On Linux, this is usually located in `~/.steam/steam/steamapps/common/Counter-Strike\ Source/cstrike/custom/`
    - On Windows, this is usually located in `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Source\cstrike\custom`
 
