@@ -1,7 +1,5 @@
 # How to setup Counter Strike: Source for Surfing on Linux
-[ Why?](#why)
-
-[The Setup](#the-setup)
+[Keep In Mind](#keep-in-mind)
 
 [How to Remove the HUD](#how-to-remove-the-hud)
 
@@ -13,21 +11,17 @@
 
 
 
-## Why?
+## Keep In Mind
 This guide is intended for my own future reference. Here I've compiled my own setup procedures.
 
-Every step is described from a Linux perspective, even if some methods are universal.
-
-## The Setup
-I use Fedora Workstation 43, and I run CS:S natively.
-
+I use Fedora Workstation 43 and run CS:S natively.
 ## How to Remove the HUD
 Hud removal cannot be done using console commands on public servers, because they require `sv_cheats 1` to be enabled. Instead you need to download a custom HUD.
 
-1. Download No Hud v2 by One from: https://gamebanana.com/mods/15647 
-2. Extract the .zip file
-3. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
-4. Copy the `my_custom_suff` folder into the CS:S `custom` folder
+1. Download No Hud v2 by One from: https://gamebanana.com/mods/15647
+3. Extract the .zip file
+4. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
+5. Copy the `my_custom_suff` folder into the CS:S `custom` folder
    - This is usually located in `~/.steam/steam/steamapps/common/Counter-Strike\ Source/cstrike/custom/`
 
 Now every HUD element is hidden, except for the crosshair.
