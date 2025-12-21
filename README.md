@@ -23,7 +23,7 @@ HUD removal cannot be done using console commands on public servers, because the
 1. Download No Hud v2 by One from: https://gamebanana.com/mods/15647
 2. Extract the .zip file
 3. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
-![Screenshot of the NoHudv2 custom HUD](screenshots/NoHud.png)
+![Screenshot of file navigation to the nohudv2/No\ Hud\ clean/cstrike/custom/ folder](screenshots/CopyHud.png)
 4. Copy the `my_custom_suff` folder into the CS:S `custom` folder
    - On Linux, this is usually located in `~/.steam/steam/steamapps/common/Counter-Strike\ Source/cstrike/custom/`
    - On Windows, this is usually located in `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Source\cstrike\custom`
