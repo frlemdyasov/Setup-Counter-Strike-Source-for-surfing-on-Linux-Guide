@@ -1,19 +1,25 @@
 # How to setup Counter Strike: Source for Surfing on Linux
-[Keep In Mind](#keep-in-mind)
+1. [Keep In Mind](#keep-in-mind)
 
-[Remove the HUD](#remove-the-hud)
+2. [Remove the HUD](#remove-the-hud)
 
-[Create Keybinds for KSF Servers](#create-keybinds-for-ksf-servers)
+3. [Create Keybinds for KSF Servers](#create-keybinds-for-ksf-servers)
+   
+   - [Enable the Developer Console](#enable-the-developer-console)
+   
+    - [Create a Restart Map Keybind](#create-a-restart-map-keybind)
+   
+    - [Personal Keybinds](#personal-keybinds)
 
-[Download Every KSF Surf Map](#download-every-ksf-surf-map)
+5. [Download Every KSF Surf Map](#download-every-ksf-surf-map)
 
-[Fix the Missing Textures on Linux](#fix-the-missing-textures-on-linux)
+6. [Fix the Missing Textures on Linux](#fix-the-missing-textures-on-linux)
 
 
 ## Keep In Mind
 This guide is intended for my own future reference. Here I've compiled my own setup procedures.
 
-I use Fedora Workstation 43 and run CS:S natively.
+I use Fedora Workstation 43 and run CS:S natively. If your setup differs from mine, not every procedure may work for you.
 ## Remove the HUD
 How to remove HUD elements such as the radar, round timer, and health counter.
 
@@ -21,10 +27,10 @@ You can't remove the HUD using console commands on public servers, because they 
 
 1. Download [No Hud v2 by One](nohudv2.zip), licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
     - Original link: https://gamebanana.com/mods/15647
-3. Extract the .zip file
-4. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
+2. Extract the .zip file
+3. In the extracted folder, navigate into `nohudv2/No\ Hud\ clean/cstrike/custom/`
 ![Screenshot of file navigation to the nohudv2/No\ Hud\ clean/cstrike/custom/ folder](screenshots/CopyHud.png)
-5. Copy the `my_custom_suff` folder into the CS:S `custom` folder
+4. Copy the `my_custom_suff` folder into the CS:S `custom` folder
    - On Linux, this is usually located in `~/.steam/steam/steamapps/common/Counter-Strike\ Source/cstrike/custom/`
    - On Windows, this is usually located in `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Source\cstrike\custom`
 
