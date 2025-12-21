@@ -1,4 +1,4 @@
-# How to setup Counter Strike: Source for Surfing on Linux
+# How to setup Counter Strike: Source for Surfing
 1. [Keep In Mind](#keep-in-mind)
 
 2. [Remove the HUD](#remove-the-hud)
