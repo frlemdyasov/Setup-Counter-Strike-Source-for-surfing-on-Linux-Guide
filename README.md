@@ -86,7 +86,7 @@ My personal set of keybinds to act as a starting point to begin creating your ow
 
 Copy this line into the console to receive my set of keybinds:
 
-`bind v sm_restart; bind q sm_tele; bind e sm_saveloc; bind x sm_teleprev; bind c sm_telenext; bind z sm_surftimer; bind r sm_pr; bind shift +duck; bind mwheeldown +jump; bind mouse1 +left; bind mouse2 +right`
+`bind v sm_restart; bind q sm_tele; bind e sm_saveloc; bind x sm_teleprev; bind c sm_telenext; bind z sm_surftimer; bind r sm_pr; bind t sm_mi; bind shift +duck; bind mwheeldown +jump; bind mouse1 +left; bind mouse2 +right`
 
 - v: Restart the map
 - q: Teleport to the current location
@@ -95,6 +95,7 @@ Copy this line into the console to receive my set of keybinds:
 - c: Teleport to the next location
 - z: Open the surf timer menu
 - r: Open the personal record menu
+- t: Open the map information menu
 - shift: Crouch/Duck
 - mousewheel down: Jump (Doesn't override space to jump)
 - left click: Turn left
